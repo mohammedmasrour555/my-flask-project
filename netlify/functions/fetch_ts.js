@@ -51,10 +51,7 @@ function renderHtmlWebpage(content, status = "OK") {
 </head>
 <body>
     <div style="text-align: center; margin-top: 50px; font-family: Arial, sans-serif;">
-        <h1>Hilal Web Service</h1>
-        <p>Status: ${status}</p>
-        <div id="data-container" style="word-break: break-all; display: none;">
-            ${content}
+        <h1>storm Web Service</h1>
         </div>
     </div>
 </body>
