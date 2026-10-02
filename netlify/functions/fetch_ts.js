@@ -93,7 +93,19 @@ export async function handler(event, context) {
   if (!fileBuffer) {
     try {
       const response = await fetch(cleanUrl, {
-        headers: { 'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)' }
+        headers: { 'Accept': '*/*',
+    'Accept-Language': 'fr-FR,fr;q=0.9',
+    'Connection': 'keep-alive',
+    'Origin': 'https://down.vidtube.one',
+    'Referer': 'https://down.vidtube.one/',
+    'Sec-Fetch-Dest': 'empty',
+    'Sec-Fetch-Mode': 'cors',
+    'Sec-Fetch-Site': 'cross-site',
+    'Sec-GPC': '1',
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36',
+    'sec-ch-ua': '"Brave";v="153", "Not_A Brand";v="8", "Chromium";v="153"',
+    'sec-ch-ua-mobile': '?0',
+    'sec-ch-ua-platform': '"Windows"' }
       });
 
       if (!response.ok) {
