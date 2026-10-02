@@ -2,7 +2,7 @@ import express from 'express';
 
 const app = express();
 // Fly.io يمرر المنفذ عبر متغيرة البيئة PORT تلقائياً أو يتم استخدام 3000
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 8080;
 
 function renderHtmlWebpage(content, status = "OK", statusCode = 200) {
   const html = `<!DOCTYPE html>
