@@ -1,6 +1,10 @@
 [build]
   functions = "api"
 
+[functions]
+  # هذا السطر يخبر Netlify بتحزيم ملفات Python داخل مجلد api
+  included_files = ["api/**"]
+
 [[redirects]]
   from = "/*"
   to = "/.netlify/functions/index"
